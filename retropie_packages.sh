@@ -16,17 +16,17 @@ __version="4.1"
 [[ "$__debug" -eq 1 ]] && set -x
 
 # main retropie install location
-rootdir="/opt/retropie"
+rootdir="/opt/retrosteam"
 
 user="$SUDO_USER"
 [[ -z "$user" ]] && user=$(id -un)
 
 home="$(eval echo ~$user)"
-datadir="$home/RetroPie"
+datadir="$home/ROMs"
 biosdir="$datadir/BIOS"
-romdir="$datadir/roms"
+romdir="$datadir/"
 emudir="$rootdir/emulators"
-configdir="$rootdir/configs"
+configdir="$rootdir/ice"
 
 scriptdir=$(dirname "$0")
 scriptdir=$(cd "$scriptdir" && pwd)

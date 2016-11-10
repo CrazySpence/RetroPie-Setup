@@ -12,12 +12,12 @@
 user="USERTOBECHOSEN"
 
 home="$(eval echo ~$user)"
-rootdir="/opt/retropie"
-retropie_path="$home/RetroPie"
+rootdir="/opt/retrosteam"
+retropie_path="$home/ROMs"
 
-usb_path="$UM_MOUNTPOINT/retropie"
-usb_path_from_rp="$usb_path/configs/from_retropie"
-usb_path_to_rp="$usb_path/configs/to_retropie"
+usb_path="$UM_MOUNTPOINT/retrosteam"
+usb_path_from_rp="$usb_path/configs/from_retrosteam"
+usb_path_to_rp="$usb_path/configs/to_retrosteam"
 
 declare -A path_mapping
 

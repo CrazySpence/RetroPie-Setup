@@ -85,7 +85,8 @@ function get_os_version() {
             __has_binaries=0
             ;;
         *)
-            fatalError "Unsupported OS\n\n$(lsb_release -idrc)"
+            __os_id="Ubuntu"
+            __os_release="16"
             ;;
     esac
 }
