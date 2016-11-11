@@ -12,7 +12,7 @@
 user="USERTOBECHOSEN"
 
 home="$(eval echo ~$user)"
-rootdir="/opt/retrosteam"
+rootdir="/etc/ice"
 retropie_path="$home/ROMs"
 
 usb_path="$UM_MOUNTPOINT/retrosteam"
@@ -22,7 +22,7 @@ usb_path_to_rp="$usb_path/configs/to_retrosteam"
 declare -A path_mapping
 
 # mapping from usb_path_to_rp/* to retropie location
-path_mapping["configs"]="$rootdir/configs"
+path_mapping["configs"]="$rootdir/"
 
 ## internals
 hook_name=${0##*/}

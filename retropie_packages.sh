@@ -18,15 +18,15 @@ __version="4.1"
 # main retropie install location
 rootdir="/opt/retrosteam"
 
-user="$SUDO_USER"
+user="steam"
 [[ -z "$user" ]] && user=$(id -un)
 
 home="$(eval echo ~$user)"
-datadir="$home/ROMs"
+datadir="$home/"
 biosdir="$datadir/BIOS"
-romdir="$datadir/"
+romdir="$datadir/ROMs"
 emudir="$rootdir/emulators"
-configdir="$rootdir/ice"
+configdir="/etc/ice"
 
 scriptdir=$(dirname "$0")
 scriptdir=$(cd "$scriptdir" && pwd)
